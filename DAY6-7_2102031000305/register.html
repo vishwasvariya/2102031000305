@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_640.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ccc;
+
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+}
+
+* {
+  box-sizing: border-box;+
+}
+
+.container {
+  padding: 16px;
+  color: whitesmoke;
+  font-size: larger;
+
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  height: 20px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  color: black;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+   <form action="/action_page.php">
+  
+    <h1>Registration form</h1>
+        <lable for="e1">Enter your first name</lable><br>
+        <input type="text" autofocus placeholder="enter first name here..." maxlength="20" id="e1" required><br><br>
+        <i class="fa-solid fa-square-right fa-beat-fade"></i>
+        <lable for="e2">Enter your middle name</lable><br>
+        <input type="text" autofocus placeholder="enter middle name here..." maxlength="20" id="e2" required><br><br>
+        <lable for="e3">Enter your last name</lable><br>
+        <input type="text" autofocus placeholder="enter last name here..." maxlength="20" id="e3" required><br><br>
+        <lable for="radio">Enter your gender</lable><br>
+        <input type="radio" id="G1" name="Gender" required /><label for="G1">male</label>&nbsp;&nbsp;
+        <input type="radio" id="G2" name="Gender" /><span>female</span><br><br>
+        <lable for="email">Enter your email</lable><br>
+        <input type="text" autofocus placeholder="enter your email here..." required><br><br>
+        <lable for="number">Enter your number</lable><br>
+        <input type="text" autofocus placeholder="enter your contact number here..." maxlength="10" required><br><br>
+
+        <lable for="d1">Select your birthdate</lable><br>
+        <input type="date" id="d1"required /><br><br>
+        <lable>Enter your parmanent address</lable><br>
+        <input type="text" placeholder="enter permanent address here.." required><br>
+        <lable>Enter your current address</lable><br>
+        <input type="text" placeholder="enter current address here..." required><br>
+        <lable>Enter your skills</lable><br>
+        <input type="text" placeholder="enter your skills here..." required><br>
+        <lable>Sequrity Questions</lable><br>
+        <input type="text" placeholder="enter your security question here..." maxlength="100" required><br>
+        <label>Regarding any quary</label><br>
+        <input type="text"><br>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="signin">
+    <h1><a href="loginform.html">SING UP</a></h1>
+  </div>
+</form>
+
+</body>
+</html>
