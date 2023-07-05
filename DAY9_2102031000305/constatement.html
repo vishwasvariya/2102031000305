@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Statements Example</title>
+    <script>
+        function checkAge() {
+            var age = parseInt(document.getElementById("ageInput").value);
+
+            if (isNaN(age)) {
+                document.getElementById("result").innerHTML = "Please enter a valid age.";
+            } else {
+                if (age >= 18) {
+                    document.getElementById("result").innerHTML = "You are eligible to vote!";
+                } else {
+                    document.getElementById("result").innerHTML = "You are not eligible to vote.";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Check Eligibility to Vote</h2>
+    <label for="ageInput">Enter your age:</label>
+    <input type="text" id="ageInput">
+    <button onclick="checkAge()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
