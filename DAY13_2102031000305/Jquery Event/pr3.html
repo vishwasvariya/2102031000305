@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover & mouseleave event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").mouseover(function(){
+            $("#id1").css("color","lightblue");
+        });
+        $("p").mouseleave(function(){
+            $("#id1").css("color","lightpink");
+        });
+    });
+</script>
+</head>
+<body>
+    <p id="id1" style="font-size: 30px;">hello</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $("#id1").css("background-color","lightblue");
+        });
+        $("input").focusout(function(){
+            $("#id1").css("background-color","lightpink");
+        });
+    });
+</script>
+</head>
+<body>
+    click it!!
+    <input id="id1" type="text">
+</body>
+</html>
